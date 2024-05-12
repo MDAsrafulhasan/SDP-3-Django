@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hi my baby</h1>
+    <h1>Hobbies : {{hobbies}} </h1>
+    <h1>List length : {{ hobbies | length }}</h1>
+    <h1>Age increment : {{ age | add:"2" }}</h1>
+    <h1>Uses of slashes: {{ name | addslashes }}</h1>
+    <h1>Main_course : {{ Main_course | capfirst }}</h1>
+    <h1> Main_course : "{{ Main_course | center:"15" }}"</h1>
+    <h1>Cut the spaces : {{ name | cut:" " }} </h1>
+    <h1> Date : {{ date | date:"D d M Y" }}</h1>
+    <h1>Empty string : {{ empty | default:"nothing" }}</h1>
+    <h1>Ascending order of Friends : {{ Friends | dictsort:"Cp_rating" }}</h1>
+    <h1>Divisible or not : {{ age | divisibleby:"2" }} </h1>
+    <h1>FileSize in formate : {{ fileSize | filesizeformat }}</h1>
+    <h1>Showing first value of a list : {{ hobbies | first }}</h1>
+    <h1>Join something in a List : {{ hobbies | join:" -- " }} </h1>
+    <h1>Showing last value of a list : {{ hobbies | last }}</h1>
+    <h1>String length : {{ string | length }}</h1>
+    <h1>{{ numbers | linenumbers }}</h1>
+    <h1>Lower string : {{ name | lower }} </h1>
+    <h1>Making a list : {{ Main_course | make_list }} </h1>
+    <h1>Return a random item : {{ hobbies | random }} </h1>
+    <h1>Slice : {{ hobbies | slice:":2" }}</h1>
+    <h1>Name : {{ name | slugify }} </h1>
+    <h1>Time : {{ Time | time:"H:i" }} </h1>
+    <h1>Time : {{ Time | time:"H\h i\m" }} </h1>
+    <h1>Making title : {{ name | title }} </h1>
+    <h1>Html of a list_of_list : {{ list_of_list | unordered_list }}</h1>
+    <h1>Name in Upper  : {{ name | upper }} </h1>
+    <h1>Count word : {{ list_of_list | wordcount }}</h1>
+    <h1>Date formate : {{ date | date:"SHORT_DATE_FORMAT" }} </h1>
+    <h1> Dot dot dot in character :  {{ list_of_list | truncatechars:10 }} </h1>
+    <h1>Word count of name : {{ name | wordcount }} </h1>
+    <h1> Dot dot dot in word : {{ list_of_list | truncatewords:3 }} </h1>
+    <h1> Striptags Filter : {{ String | striptags }}</h1>
+    <h1>You have {{ num_messages }} message {{ num_messages | pluralize }}</h1>
+</body>
+</html>
