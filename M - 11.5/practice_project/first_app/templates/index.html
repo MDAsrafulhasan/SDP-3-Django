@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content1 %}
+    <h1>Menu bar</h1>
+    {% endblock %}
+
+{% block content2 %}
+<div style="display: flex;align-items: center;justify-content: center;gap: 20px;flex-wrap: wrap;">
+    {% for item in meals %}
+    <div class="card" style="width: 13rem;">
+        <img src="{{item.strMealThumb}}" class="card-img-top" alt="img">
+        <div class="card-body">
+            <p class="card-text">{{item.idMeal}}</p>
+            <h5 class="card-title">{{item.strMeal}}</h5>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
