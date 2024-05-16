@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css2/style2.css' %}">
+{% endblock %}
+
+
+<!-- {% block title %}
+<h1>meal page, index.html</h1>
+{% endblock %} -->
+
+
+{% block content1 %}
+<!-- <div style="display: flex;align-items: center;justify-content: center;flex-wrap: wrap;gap: 20px;"> -->
+<div class="row container m-auto">
+    {% for item in categories %}
+    <div class="col-4">
+        <div class="card" style="width: 20rem;">
+            <img src="{{item.strCategoryThumb}}" class="card-img-top" alt="...">
+            <div class="card-body">
+
+                <h5>{{item.idCategory}}</h5>
+                <h5 class="card-title">{{item.strCategory}}</h5>
+                <p class="card-text">{{ item.strCategoryDescription | truncatewords:10 }} </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

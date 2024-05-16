@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css3/style3.css' %}">
+{% endblock %}
+
+<!-- {% block title %}
+<h1>this is home page</h1>
+{% endblock %} -->
+
+{% block content1 %}
+<div style="display: flex;align-items: center;justify-content: center;gap: 30px;flex-wrap: wrap;">
+    <div style="border: 1px solid transparent;width: 440px;height: 200px;">
+        <h1 style="font-weight: bold;">Home Restaurant</h1>
+        <p style="font-size: 20px;">Welcome to our website.This is a
+            famous restaurant of our Dhaka district.Come , eat and pay then we talk more about us.</p>
+    </div>
+    <img style="width: 40%; border-radius: 40px;" src="{% static 'image/img2.jpg' %}" alt="img">
+</div>
+{% endblock %}

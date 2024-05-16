@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css1/style1.css' %}">
+    {% endblock %}
+
+<!-- {% block title %}
+<h1>About_us page, about.html</h1>
+{% endblock %} -->
+
+{% block content1 %}
+<div style="display: flex;align-items: center;justify-content: center;gap: 30px;flex-wrap: wrap;">
+    <div style="border: 1px solid transparent;width: 440px;height: 200px;">
+        <h1 style="font-weight: bold;">MD.Asraful Hasan (Owner)</h1>
+        <p style="font-size: 20px;">
+            I am the owner of this restaurant.I am a student of Green University.
+            I am very happy to serve you. This one is the best restuarant in this area . We have a lot of delicious items. If you go our show item menu then you can see the items.
+        </p>
+    </div>
+    <img style="width: 20%; border-radius: 40px;" src="{% static 'image/img1.JPG' %}" alt="img">
+</div>
+{% endblock %}
